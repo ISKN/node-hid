@@ -58,7 +58,7 @@ Those with checks we provide pre-built binaries, for the others you will need to
 * ☑ = full-support with pre-built binaries
 * ☐ = source-support only
 
-We strive to make `node-hid` cross-platform so there's a good chance any
+We strive to make `node-hid-iskn` cross-platform so there's a good chance any
 combination not listed here will compile and work.
 
 ### Supported Node versions ###
@@ -375,7 +375,7 @@ npm install node-hid@0.5.7
 ```
 or:
 ```
-npm install node-hid --build-from-source --driver=libusb
+npm install node-hid-iskn --build-from-source --driver=libusb
 ```
 
 
@@ -486,7 +486,7 @@ If you want a specific version of electron, do something like:
 If using `node-hid` with `webpack`, you may find it useful to list `node-hid` as an external in your `webpack-config.js`:
 ```
   externals: {
-    "node-hid": 'commonjs node-hid'
+    "node-hid-iskn": 'commonjs node-hid-is'
   }
 ```
 (You can see an example of this in [Blink1Control2](https://github.com/todbot/Blink1Control2/)'s [webpack-config.js](https://github.com/todbot/Blink1Control2/blob/master/webpack.config.js)
@@ -498,3 +498,5 @@ If using `node-hid` with `webpack`, you may find it useful to list `node-hid` as
 
 Please use the [node-hid github issues page](https://github.com/node-hid/node-hid/issues)
 for support questions and issues.
+
+#
